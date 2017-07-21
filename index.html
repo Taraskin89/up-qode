@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>UP QUODE</title>
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./fonts/fonts.css">
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/viewportchecker.js"></script>
+</head>
+<body>
+		<nav>
+			<section id="nav-section">
+			<a href="#" class="logo">
+				<img src="../img/logo.png" alt="Home Page"/>		
+			</a>
+			<div class="menu-section">
+				<ul id="menu">
+				<li><a class="nav " href="#home">Home</a></li>
+				<li><a class="nav " href="#product">Products</a>
+					<menu>
+						<li><a href="#">Name Surname</a></li>
+						<li><a href="#">Nelson Noa Chris</a></li>
+						<li><a href="#">Name Surname</a>
+							<menu>
+								<li><a href="#">Name Surname</a></li>
+								<li><a href="#">Nelson Noa Chris</a></li>
+								<li><a href="#">Name Surname</a></li>
+								<li><a href="#">Nelson Noa Chris</a></li>
+								<li><a href="#">Nelson Noa</a></li>
+							</menu>
+						</li>
+						<li><a href="#">Nelson Noa</a></li>
+					</menu>
+				</li>
+				<li><a class="nav " href="#about">About</a></li>
+				<li><a class="nav " href="#contactform">Contact</a></li>     
+			</ul>	
+			</div>
+			 
+			<form action='//google.com/search' target='_blank' class='search'>
+		           	<input type='search' class='search-input'/>
+		           	<button type="submit" class="search-submit">
+		                <img src="../img/search.png" />
+		   			</button>
+		        </form>  
+			</section>
+			<div id="autorise">
+					<a href="#">
+						<img src="../img/menu.png" alt="menu"/>
+					</a>
+			</div> 
+		</nav>
+		<header class="slider" id="slider">
+				<div class="slItems">
+					<div class="slItem" style="background-image: url('../img/bg-header.png');">
+						<div class="slText">
+							<div class="title">
+								<p class="title-big">Creative <span>Design Agency</span></p>	
+								<p class="title-small">Aenean eu leo quam. Pellentesque ornare sem lacinia quam 	venenatis vestibulum. 
+							Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="slItem" style="background-image: url('../img/bg-header-1.png');">
+						<div class="slText">
+							<div class="title">
+					<p class="title-big" style="color:black;">Creative <span>Design Agency</span></p>	
+					<p class="title-small">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+						Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+				</div>
+						</div>
+					</div>
+					<div class="slItem" style="background-image: url('../img/bg-header-2.png');">
+						<div class="slText">
+							<div class="title">
+							<p class="title-big">Creative <span>Design Agency</span></p>	
+							<p class="title-small">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. 
+						Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor.</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('.title-big').addClass("hidden").viewportChecker({
+			    	classToAdd: 'visible animated fadeIn',
+			    	offset: 100    
+			   	});
+			   	$('.title-small').addClass("hidden").viewportChecker({
+			    	classToAdd: 'visible animated flipInX',
+			    	offset: 100    
+			   });   
+		   
+			});
+			</script>      
+		</header>
+		<script>
+			$(function(){
+				$('#slider').rbtSlider({
+					height: '100vh', 
+					'dots': true,
+					'arrows': true,
+					'auto': 3
+				});
+			});
+		</script>
+		<section id="home">
+			<div class="title-home">
+				<p class="title-big-home">Why <span>Choose Us</span></p>	
+				<p class="title-small-home">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euismod quam nisi quis felis.  </p>
+				<p class="title-small-home">Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+			</div>
+			<div class="all-items-home">
+				<div class="home-item">
+				<div class="home-img-item">
+					<img src="../img/home-ic-1.png" alt="" />
+				</div>
+				<div class="home-item-description">
+					<span>your title</span>	
+					<p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</p>
+				</div>
+				<div class="home-hover">
+					<p>SEE MORE</p>
+					<span>
+						<a href="#"><img src="../img/link-icon.png" alt=""></a>
+						<a href="#"><img src="../img/zoom-icon.png" alt=""></a>
+					</span>
+					
+				</div>
+			</div>
+			<div class="home-item">
+				<div class="home-img-item">
+					<img src="../img/home-ic-2.png" alt="" />
+				</div>
+				<div class="home-item-description">
+					<span>your title</span>	
+					<p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</p>
+				</div>
+				<div class="home-hover">
+					<p>SEE MORE</p>
+					<span>
+						<a href="#"><img src="../img/link-icon.png" alt=""></a>
+						<a href="#"><img src="../img/zoom-icon.png" alt=""></a>
+					</span>
+				</div>
+			</div>
+			<div class="home-item">
+				<div class="home-img-item">
+					<img src="../img/home-ic-3.png" alt="" />
+				</div>
+				<div class="home-item-description">
+					<span>your title</span>	
+					<p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</p>
+				</div>
+				<div class="home-hover">
+					<p>SEE MORE</p>
+					<span>
+						<a href="#"><img src="../img/link-icon.png" alt=""></a>
+						<a href="#"><img src="../img/zoom-icon.png" alt=""></a>
+					</span>
+				</div>
+			</div>
+			<div class="home-item">
+				<div class="home-img-item">
+					<img src="../img/home-ic-4.png" alt="" />
+				</div>
+				<div class="home-item-description">
+					<span>your title</span>	
+					<p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</p>
+				</div>
+				<div class="home-hover">
+					<p>SEE MORE</p>
+					<span>
+						<a href="#"><img src="../img/link-icon.png" alt=""></a>
+						<a href="#"><img src="../img/zoom-icon.png" alt=""></a>
+					</span>
+				</div>
+			</div>
+			<div class="home-item">
+				<div class="home-img-item">
+					<img src="../img/home-ic-5.png" alt="" />
+				</div>
+				<div class="home-item-description">
+					<span>your title</span>	
+					<p>Duis bibendum diam non erat facilaisis en ter tincidunt. Duis</p>
+				</div>
+				<div class="home-hover">
+					<p>SEE MORE</p>
+					<span>
+						<a href="#"><img src="../img/link-icon.png" alt=""></a>
+						<a href="#"><img src="../img/zoom-icon.png" alt=""></a>
+					</span>
+				</div>
+			</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					
+					$('.home-item').addClass("hidden").viewportChecker({
+			    		classToAdd: 'visible animated bounceInLeft',
+			    		offset: 100    
+					}); 			
+				});
+			</script>
+		</section>
+		<section id="product">
+		<div class="product-header" id="product-header">
+				<p>our <span>&nbsp; products</span></p>
+		</div>
+			<div class="all-product-items">
+				<div class="product-item row-1">
+						<img src="../img/product-item-1.png" alt="">
+						<aside>
+							TITLE
+							<a href="#">Best Product</a>
+							<p>Duis bibendum diam non erat facilaisis en ter</p>
+						</aside>
+					</div>
+					<div class="product-item row-1">
+						<img src="../img/product-item-2.png" alt="">
+						<aside>
+							TITLE
+							<a href="#">Best Product</a>
+							<p>Duis bibendum diam non erat facilaisis en ter</p>
+						</aside>
+					</div>
+					<div class="product-item row-1">
+						<img src="../img/product-item-3.png" alt="">
+						<aside>
+							TITLE
+							<a href="#">Best Product</a>
+							<p>Duis bibendum diam non erat facilaisis en ter</p>
+						</aside>
+					</div>
+		
+		
+					<div class="product-item row-2">
+						<img src="../img/product-item-4.png" alt="">
+						<aside>
+							TITLE
+							<a href="#">Best Product</a>
+							<p>Duis bibendum diam non erat facilaisis en ter</p>
+						</aside>
+					</div>
+					<div class="product-item row-2">
+						<img src="../img/product-item-5.png" alt="">
+						<aside>
+							TITLE
+							<a href="#">Best Product</a>
+							<p>Duis bibendum diam non erat facilaisis en ter</p>
+						</aside>
+					</div>
+					<div class="product-item row-2">
+						<img src="../img/product-item-6.png" alt="">
+						<aside>
+							TITLE
+							<a href="#">Best Product</a>
+							<p>Duis bibendum diam non erat facilaisis en ter</p>
+						</aside>
+					</div>		
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('.row-1').addClass("hidden").viewportChecker({
+			    		classToAdd: 'visible animated lightSpeedIn',
+			    		offset: 100    
+			   		});   
+			   		$('.row-2').addClass("hidden").viewportChecker({
+			    		classToAdd: 'visible animated bounceInLeft',
+			    		offset: 100   
+			   		});   
+				});            
+			</script>
+		</section>
+		<section id="about">
+			<div class="about-us-text">
+			<div>
+				<span>ABOUT </span> US
+				<p class="about-title">Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism
+					Nullam at scelerisque tellus mattis volutpat rhoncus, </p>
+				<p class="about-paragraph">
+					Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula 
+					scelerisque a. Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam 
+					tempus feugiat mi id semper. Pellentesque ac posuere augue, vitae mollis enim. 
+					Etiam et ullamcorper dolor, a hendrerit quam.
+				</p>
+		
+				<p class="value" align="justify">PHOTOSHOP 79%</p>
+		  		<div class="progressBar-1 tiny-green"><div></div></div>
+		  		</progress>
+		  		<p class="value" align="justify">HTML/CSS 90%</p>
+		  		<div class="progressBar-2 tiny-green"><div></div></div>
+		    	</progress>
+		  		<p class="value" align="justify">JAVASCRIPT 69%</p>
+		  		<div class="progressBar-3 tiny-green"><div></div></div>
+		  		</progress>
+		  		<p class="value" align="justify">WORDPRESS 92%</p>
+		  		<div class="progressBar-4 tiny-green"><div></div></div>
+		  		</progress>
+			</div>
+			<div class="mockup">
+				<img class="mockup-ipad" src="../img/ipad.png" alt=""/>
+				<img class="mockup-shadow" src="../img/ipad-shadow.png" alt=""/>
+			</div>
+			</div>
+			
+			<div class="about-us-text bottom-text">
+				<a href="#">GET&nbsp;IN<span>&nbsp;TOUCH</span></a>
+				<p class="about-title">
+				Quisque fermentum, nisl mattis volutpat rhoncus, tellus est congue nibh, ut euism
+					        Nullam at scelerisque tellus mattis volutpat rhoncus, 
+				</p>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$('.mockup-ipad').addClass("hidden").viewportChecker({
+			    		classToAdd: 'visible animated bounceInUp',
+			    		offset: 100    
+			   		});
+		
+					$(".mockup-shadow").fadeIn(3000);
+		
+					$(document).on("scroll", function () {
+						var bar_selector = ".progressBar-1";
+		    			var scroll_top = $(document).scrollTop();
+		    			$(bar_selector + " a").each(function(){
+		        			var hash = $(this).attr("href");
+		        			var target = $(hash);
+		        			if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+		        			}
+		    			});
+					});
+				});   
+				function progressBar(percent, $element) {
+						var progressBarWidth = percent * ($element.width() + 6) / 100;
+							$element.find("div").animate({ width: progressBarWidth }, 1000);
+						
+				}
+								progressBar(79, $(".progressBar-1"));
+								progressBar(90, $(".progressBar-2"));
+								progressBar(69, $(".progressBar-3"));
+								progressBar(92, $(".progressBar-4"));     
+			</script>
+		</section>
+		<section id="contact">
+			<div id="googlemaps"></div>
+			<div id="contactform">
+			<div id="form">
+		        <form class="contact-form" id="feedback-form">
+		            <div class="name">
+		                <input type="text" id="fullname" placeholder="Full Name" />
+		                <div class="error-box"></div>
+		            </div>
+		            <div class="email">
+		                <input type="email" id="email" placeholder="Email Address" />
+		                <div class="error-box"></div>
+		            </div>
+		            <div class="message">
+		                <textarea name="message" id="message" placeholder="Message"></textarea>
+		                <div class="error-box"></div>
+		            </div>
+		            <div class="submit">
+		            	<span><label for="checkbox"><input type="checkbox" id="checkbox"/> I like your company</label></span><div class="error-box"></div>
+		            	<input type="submit" value="Send" class="buttonSend" id="send" />
+		
+		            </div>
+		            <div class="contacts"></div>
+		        </form>
+		        <div class="contact-info">
+		        	<p>
+		        			69/A, Some Street Name
+						Your City, code 01234 
+						Country Name
+		
+						+880 123 456 78 98
+						+860 987 648 74 95
+		
+						company@mail.com
+						sales@mail.com
+		        	</p>
+		        </div>
+		    </div>
+			</div>
+			<script type="text/javascript">
+			 	 
+			function showGoogleMaps() {
+			 
+				var mapOptions = {
+					zoom: 16,
+					streetViewControl: false,
+					scaleControl: true,
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					center: {lat: 49.839829974, lng: 24.02249991}
+				};
+			 
+				map = new google.maps.Map(document.getElementById('googlemaps'),
+				mapOptions);
+			 
+				marker = new google.maps.Marker({
+					position: {lat: 49.839829974, lng: 24.02249991},
+					map: map,
+					draggable: false,
+					animation: google.maps.Animation.DROP
+				});
+			}   
+			$('input[type=checkbox]').css({'opacity': 0}).wrap('<span class="wrap-checkbox"></span>');  
+			$('.wrap-checkbox').on("click",function() {
+		  		$(this).toggleClass('active');
+			})   
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#form').addClass("hidden").viewportChecker({
+			    	classToAdd: 'visible animated flipInX',
+			    	offset: 100    
+			   	});   
+			});   
+		</script>
+		<script type="text/javascript">
+		      $(document).ready(function(){
+		         $('input#fullname, input#email, textarea#message').unbind().blur( function(){
+		            
+		             var id = $(this).attr('id');
+		             var val = $(this).val();
+		           switch(id)
+		           {
+		                 case 'name':
+		                    var rv_name = /^[a-zA-Zа-яА-Я]+$/; 
+		
+		                    if(val.length > 5 && rv_name.test(val))
+		                    {
+		                       $(this).addClass('not_error');
+		                       $(this).next('.error-box').text('Correct')
+		                                                 .css('color','#69fb7a')
+		                                                 .animate({'paddingLeft':'10px'},400)
+		                                                 .animate({'paddingLeft':'5px'},400);
+		                    }
+		                    else
+		                    {
+		                       $(this).removeClass('not_error').addClass('error');
+		                       $(this).next('.error-box').html('Only chart type symbol! Minimum 6 characters')
+		                                                  .animate({'paddingLeft':'10px'},400)
+		                                                  .animate({'paddingLeft':'5px'},400);
+		                    }
+		                break;
+		               case 'email':
+		                   var rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+		                   if(val != '' && rv_email.test(val))
+		                   {
+		                      $(this).addClass('not_error');
+		                      $(this).next('.error-box').text('Correct')
+		                                                .css('color','#69fb7a')
+		                                                .animate({'paddingLeft':'10px'},400)
+		                                                .animate({'paddingLeft':'5px'},400);
+		                   }
+		                   else
+		                   {
+		                      $(this).removeClass('not_error').addClass('error');
+		                      $(this).next('.error-box').html('&bull; Please type a correct email!')
+		                                                 .animate({'paddingLeft':'10px'},400)
+		                                                 .animate({'paddingLeft':'5px'},400);
+		                   }
+		               break;
+		              case 'message':
+		                  if(val != '' &&  30 < val.length < 1000)
+		                  {
+		                     $(this).addClass('not_error');
+		                     $(this).next('.error-box').text('Correct')
+		                                               .css('color','#69fb7a')
+		                                               .animate({'paddingLeft':'10px'},400)
+		                                               .animate({'paddingLeft':'5px'},400);
+		                  }
+		                  else
+		                  {
+		                     $(this).removeClass('not_error').addClass('error');
+		                     $(this).next('.error-box').html('&bull; Minimum 30 characters!')
+		                                               
+		                                               .animate({'paddingLeft':'10px'},400)
+		                                               .animate({'paddingLeft':'5px'},400);
+		                  }
+		                /*case 'checkbox':
+		                	if(val == "checked"){
+		                		$(this).addClass('not_error');
+		                     	$(this).next('.error-box').text('Correct')
+		                                               .css('color','green')
+		                                               .animate({'paddingLeft':'10px'},400)
+		                                               .animate({'paddingLeft':'5px'},400);
+		                	}
+		                	else{
+		                		$(this).removeClass('not_error').addClass('error');
+		                     	$(this).next('.error-box').html('&bull; Pleasу like our company')
+		                                               .css('color','red')
+		                                               .animate({'paddingLeft':'10px'},400)
+		                                               .animate({'paddingLeft':'5px'},400);
+		                	}*/
+		              break;
+		
+		           } // end switch(...)
+		
+		         }); // end blur()
+					if($('#checkbox') == "checked"){
+		                		$(this).addClass('not_error');
+		                     	$(this).next('.error-box').text('Correct')
+		                                               .css('color','green')
+		                                               .animate({'paddingLeft':'10px'},400)
+		                                               .animate({'paddingLeft':'5px'},400);
+		                	}
+		                	else{
+		                		$(this).removeClass('not_error').addClass('error');
+		                     	$(this).next('.error-box').html('&bull; Pleasу like our company')
+		                                               .css('color','red')
+		                                               .animate({'paddingLeft':'10px'},400)
+		                                               .animate({'paddingLeft':'5px'},400);
+		                	}
+		         $('form#feedback-form').submit(function(e){
+		             e.preventDefault();
+		
+		             if($('.not_error').length == 3)
+		             {  
+		                 $.ajax({
+		                        url: 'send.php',
+		                        type: 'post',
+		                        data: $(this).serialize(),
+		
+		                        beforeSend: function(xhr, textStatus){ 
+		                             $('form#feedback-form :input').attr('disabled','disabled');
+		                        },
+		
+		                       success: function(response){
+		                            $('form#feedback-form :input').removeAttr('disabled');
+		                            $('form#feedback-form :text, textarea').val('').removeClass().next('.error-box').text('');
+		                            alert(response);
+		                       }
+		                }); // end ajax({...})
+		            }
+		            else{
+		              return false;
+		            }
+		       }); 
+		
+		      }); 
+		</script>
+		
+		</script>
+		</section>
+		<footer>
+			<section id="footer">
+				<p class="copyright">
+					Copyright © Company. All Rights Reserved  2016
+				</p>
+				<div class="social">
+					<a href="#"><img src="../img/fb.png" alt=""></a>
+					<a href="#"><img src="../img/g+.png" alt=""></a>
+					<a href="#"><img src="../img/twit.png" alt=""></a>
+					<a href="#"><img src="../img/ball.png" alt=""></a>
+				</div>
+			</section>
+		</footer>
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="./js/viewportchecker.js"></script>
+	<script type="text/javascript" src="./js/slider.min.js"></script>
+	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCopWNQK7jzOpTQsn84eJ7h4mUA5Lrrip0&callback=showGoogleMaps"
+    async defer></script>
+    <script type="text/javascript">
+    	var menu_selector = "#menu";
+
+function onScroll(){
+    var scroll_top = $(document).scrollTop();
+    $(menu_selector + " a").each(function(){
+        var hash = $(this).attr("href");
+        var target = $(hash);
+        if (target.position().top <= scroll_top && target.position().top + target.outerHeight() > scroll_top) {
+            $(menu_selector + " a.active").removeClass("active");
+            $(this).addClass("active");
+        } else {
+            $(this).removeClass("active");
+        }
+    });
+}
+ 
+$(document).ready(function () {
+ 
+    $(document).on("scroll", onScroll);
+ 
+    $("a[href^=#]").click(function(e){
+        e.preventDefault();
+ 
+        $(document).off("scroll");
+        $(menu_selector + " a.active").removeClass("active");
+        $(this).addClass("active");
+        var hash = $(this).attr("href");
+        var target = $(hash);
+ 
+        $("html, body").animate({
+            scrollTop: target.offset().top
+        }, 500, function(){
+            window.location.hash = hash;
+            $(document).on("scroll", onScroll);
+        });
+ 
+    });
+ 
+});
+    </script>
+</body>
+</html>
